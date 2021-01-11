@@ -1,21 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import FirstScreen from './src/screens/FirstScreen';
+import SecondScreen from './src/screens/SecondScreen';
+import ThirdScreen from './src/screens/ThirdScreen';
+import FourthScreen from './src/screens/FourthScreen';
+import FifthScreen from './src/screens/FifthScreen';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const navigator = createStackNavigator(
+  {
+    First: FirstScreen,
+    Second: SecondScreen,
+    Third: ThirdScreen,
+    Fourth: FourthScreen,
+    Fifth: FifthScreen,
   },
-});
+  {
+    initialRouteName: 'First',
+    defaultNavigationOptions: {
+      title: 'Task-5',
+    },
+  }
+);
+
+
+export default createAppContainer(navigator);
