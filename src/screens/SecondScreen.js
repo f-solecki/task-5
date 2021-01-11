@@ -8,8 +8,8 @@ const SecondScreen = (props) => {
         <Image source={require('../images/second.jpg')} style={styles.image} />
         <View>
             <Text style={{ marginBottom: 10, fontSize: 25, alignSelf: 'center' }}>What is React Navigation?</Text>
-            <Text style={styles.description}>Reack navigation is the library that allows us to navigate between screens like going to the next   slide of presentation.</Text>
-            <Text style={{ marginTop: 10, fontSize: 18 }}>Click 'Next' button to go to the next screen.</Text>
+            <Text style={styles.description}>React Navigation is the library that allows us to navigate between screens such as going to the next   slide of presentation.</Text>
+            <Text style={{ marginTop: 10, fontSize: 18 }}>Click <Text style={{ color: '#9090ff' }}>'Next'</Text> button to go to the next screen.</Text>
 
         </View>
         <Button title='Next' onPress={() => props.navigation.navigate('Third')} />

@@ -8,7 +8,7 @@ const FirstScreen = (props) => {
         <Image source={require('../images/first.png')} style={styles.image} />
         <View>
             <Text style={styles.description}>In this tour I want to show you some basic information about this app.</Text>
-            <Text style={{ marginTop: 15, fontSize: 18 }}>Click 'Next' button to start this tutorial.</Text>
+            <Text style={{ marginTop: 15, fontSize: 18 }}>Click <Text style={{ color: '#9090ff' }}>'Next'</Text> button to start this tutorial.</Text>
         </View>
         <Button title='Next' onPress={() => props.navigation.navigate('Second')} />
     </View>)

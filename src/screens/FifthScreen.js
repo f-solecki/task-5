@@ -8,9 +8,9 @@ const FifthScreen = (props) => {
             <Text style={styles.title}>Thanks for reading!</Text>
             <Image source={require('../images/fifth.png')} style={styles.image} />
             <View>
-                <Text style={{ marginBottom: 15, fontSize: 25, alignSelf: 'center' }}>That is it!</Text>
+                <Text style={{ marginBottom: 15, fontSize: 25, alignSelf: 'center' }}>That's it!</Text>
                 <Text style={styles.description}>Now you know some basics of React Navigation. The next step is to try it out.</Text>
-                <Text style={{ marginTop: 10, fontSize: 18 }}>This is the last screen. There is no 'Next' button.</Text>
+                <Text style={{ marginTop: 10, fontSize: 18 }}>This is the last screen. There is no <Text style={{ color: '#9090ff' }}>'Next'</Text> button.</Text>
             </View>
         </View>
     </View>)
